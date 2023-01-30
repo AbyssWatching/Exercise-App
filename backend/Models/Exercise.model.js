@@ -7,7 +7,7 @@ const Schema = mongoose.Schema;
 const exerciseSchema = new Schema({
     //notice how the req is on the same line!!
     username: {type: String, required: true},
-    description: { type: String, required},
+    description: { type: String, required: true},
     duration: { type: Number, required: true},
     date: {type: Date, require: true},
 }, {

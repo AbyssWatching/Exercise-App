@@ -1,7 +1,7 @@
 //requires express router duh
 const router = require('express').Router();
 //requires moongoose model
-const User = require ('../Models/users.models')
+const User = require ('../Models/users.models');
 
 //first route(end point) on /users url path
 //if it is a get request this will happen
@@ -28,7 +28,7 @@ router.route('/add').post((req, res) =>{
     .then(() => res.json('User added!'))
     //handles error
     .catch(err => res.status(400).json('Error: ' + err));
-})
+});
 
 //exports this for ussage outside!
 module.exports = router;
